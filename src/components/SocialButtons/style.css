@@ -1,0 +1,94 @@
+.social-buttons-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	align-items: center;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: var(--ui-color-1);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 35px;
+  transition: all ease-out 0.3s;
+}
+
+.social-button:hover ,
+.social-button:focus {
+  color: var(--ui-color);
+}
+
+.social-button .icon {
+	height: 40px;
+	width: 40px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid var(--ui-color-1);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.social-button-hover {
+	display: flex;
+	align-items: center;
+}
+
+.social-button-hover__body {
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  padding: 12px;
+  background-color: var(--ui-color-1);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.social-button-hover__body.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.social-button-hover__body a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-button-hover__body a i {
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.social-button-hover__body a:hover i,
+.social-button-hover__body a:focus i {
+  color: #020d18;
+}
+
+.social-button-hover__body:before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  left: -10px;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid var(--ui-color-1);
+}
+
+
+@media (max-width: 480px) {
+	.social-button-hover {
+		margin-top: 20px;
+	}
+}

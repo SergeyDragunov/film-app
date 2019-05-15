@@ -1,0 +1,78 @@
+.user-header {
+	display: flex;
+}
+
+.user-header__avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	flex-shrink: 0;
+	border: 2px solid var(--ui-color-1);
+	background-color: #0b1a2a;
+	overflow: hidden;
+}
+
+.user-header__avatar a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.user-header__avatar a:focus,
+.user-header__avatar a:hover {
+	color: var(--ui-color);
+}
+
+.user-header__avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+.user-header__avatar span {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.user-header__info {
+	padding-left: 10px;
+}
+
+.user-header__name {
+	margin-bottom: 0;
+}
+
+.user-header__name a {
+  font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.user-header__name a:focus,
+.user-header__name a:hover {
+	color: var(--ui-color);
+}
+
+.user-header__logout-btn {
+	font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+}
+
+.user-header__logout-btn:hover,
+.user-header__logout-btn:focus {
+	text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+	.user-header {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+	}
+}

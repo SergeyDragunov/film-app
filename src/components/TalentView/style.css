@@ -1,0 +1,190 @@
+/* Talent */
+
+.talent {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 30px;
+  background-color: #091a2c;
+  overflow: hidden;
+}
+
+.talent--grid {
+  height: 100px;
+}
+
+.talent--dark {
+  background-color: #020d18;
+}
+
+.talent__image {
+  width: 100px;
+  height: 130px;
+  flex-shrink: 0;
+  background: var(--logo-bg);
+}
+
+.talent__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.talent--grid .talent__image {
+  width: 80px;
+  height: 100px;
+}
+
+.talent--draft .talent__image::before {
+  width: 120px;
+  content: 'draft';
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  text-align: center;
+  background: var(--ui-color-1);
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.talent__info {
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.talent--grid .talent__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.talent__name {
+  margin-bottom: 5px;
+}
+
+.talent__name,
+.talent__name a {
+  line-height: 1.2;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: none;
+  transition: all 0.3s;
+}
+
+.talent__name a {
+  display: inline-block;
+}
+
+.talent__name .LinesEllipsis {
+  display: inline-block;
+  width: 100%;
+}  
+
+
+.talent:hover .talent__name a,
+.talent:hover .talent__name,
+.talent__name:hover,
+.talent__name:focus,
+.talent__name a:hover,
+.talent__name a:focus {
+  color: var(--ui-color);
+}
+
+.talent__param {
+  display: inline-block;
+  margin-top: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #abb7c4;
+  font-weight: 300;
+  /*text-transform: uppercase;*/
+  color: #fff;
+  line-height: 1.4;
+}
+
+.talent--list .talent__param {
+  font-size: 14px;
+}
+
+.talent__bio {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Content Control */
+
+.content-control--talent {
+  z-index: 99;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.talent--list .content-control--talent {
+  top: 5px;
+  right: 5px;
+  transform: translate3d(0, -40px, 0);
+}
+
+.talent--grid .content-control--talent {
+  bottom: 0;
+  right: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.talent:hover .content-control,
+.talent:focus .content-control {
+  transform: translate3d(0, 0px, 0);
+}
+
+@media (max-width: 767px) {
+  .talent--list {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .talent__image {
+    margin: auto;
+  }
+}
+
+/* Talent Submit */
+
+.talent-submit {
+	display: flex;
+}
+
+.talent-submit__headshot {
+  width: 100px;
+  height: 130px;
+  margin-right: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--logo-bg);
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.talent-submit__headshot img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.talent-submit__name {
+	margin-bottom: 15px;
+}
+
+.talent-submit__biography {
+	color: #222222;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}

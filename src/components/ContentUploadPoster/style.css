@@ -1,0 +1,47 @@
+.content-upload-poster__poster-title {
+	padding: 10px 0px;
+	text-align: center
+}
+
+.content-upload-poster__poster {
+	width: 170px;
+	height: 261px;
+	margin: auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.content-upload-poster__poster img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  border-radius: 5px;
+}
+
+.content-upload-poster__upload-btn-wrapper {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.content-upload-poster__upload-btn-wrapper input:focus ~ label {
+	color: var(--ui-color);
+}
+
+.content-upload-poster__error {
+	text-align: center;
+}
+
+.content-upload-poster__error .error-msg {
+	position: relative;
+}
+
+.content-upload-poster__remove-poster-btn {
+	color: red;
+	padding-top: 5px;
+}
+
+.content-upload-poster__remove-poster-btn:focus,
+.content-upload-poster__remove-poster-btn:hover {
+	text-decoration: underline;
+}

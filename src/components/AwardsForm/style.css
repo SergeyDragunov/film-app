@@ -1,0 +1,86 @@
+.form-group--year .form-select__indicator-separator {
+	display: none;
+}
+
+.form-group--fest .form-select__option {
+	font-size: 13px;
+	line-height: 1.2;
+}
+
+.form-group--awardType .form-select__single-value {
+  display: flex;
+  align-items: center;	
+}
+
+.form-group--awardType .form-select__single-value span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Awards Form */
+
+.awards-form {
+	padding: 20px 0px;
+}
+
+.awards-form__fest {
+  margin-bottom: 10px;
+}
+
+.awards-form__title {
+	font-family: 'Dosis', sans-serif;
+  font-size: 22px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.awards-form__btns {
+	text-align: right;
+}
+
+.awards-form__add-fest {
+	margin-right: 10px;
+}
+
+.awards-form__cancel-btn {
+  margin-right: 10px;
+}
+
+.awards-form__remove-btn:hover,
+.awards-form__remove-btn:focus {
+	transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .awards-form .form-group {
+    margin-bottom: 10px;
+  }
+}
+
+/* Award Icon */
+
+.award-icon {
+	display: inline-block;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+}
+
+.award-icon--Winner {
+  background: url('../../assets/images/icons/award-symbol.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.award-icon--Nominee {
+  background: url('../../assets/images/icons/award-symbol-nomination.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.award-icon--Honorable {
+  background: url('../../assets/images/icons/award-symbol-honorable.svg') no-repeat center;
+  background-size: 100%;
+}

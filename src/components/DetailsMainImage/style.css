@@ -1,0 +1,119 @@
+.details-main-image {
+	position: relative;
+	height: 520px;
+	width: 100%;
+	background: var(--logo-bg);
+	background-size: 30%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.details-main-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.details-main-image__tag {
+	position: absolute;
+	top: -30px;
+	left: 20px;
+	width: 40px;
+	height: 70px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background: var(--ui-color-1);
+	/*background-image: url('../../assets/images/icons/star-gold.svg');*/
+	/*background-size: 25px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: bottom;*/
+	text-align: center;
+	padding-top: 3px;
+	transform: translate3d(0,0,0);
+	animation: bounceInDown 1s forwards;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1500px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.details-main-image__tag .icon {
+	font-size: 24px;
+	/*color: #e8b715;*/
+	color: var(--ui-color);
+}
+
+.details-main-image__tag::after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	border-color: var(--ui-color-1);
+	border-style: solid;
+	border-top-width: 0px;
+	border-bottom-width: 10px;
+	border-left-width: 20px;
+	border-right-width: 20px;
+	border-bottom-color: transparent;
+}
+
+@media (max-width: 1200px) {
+	.details-main-image {
+		height: 449px;
+		max-width: 340px;
+	}
+}
+
+@media (max-width: 991px) {
+	.details-main-image {
+		height: 521px;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.details-main-image--width {
+		width: 60%;
+	}
+}
+
+@media (max-width: 767px) {
+	.details-main-image {
+		height: 388px;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.details-main-image {
+		height: 400px;
+	}
+
+	.details-main-image--width {
+		width: 80%;
+	}
+}
+
+@media (max-width: 340px) {
+	.details-main-image {
+		height: 318px;
+	}
+}
+
+
+.details-main-image--film {
+	margin-bottom: 0;
+}

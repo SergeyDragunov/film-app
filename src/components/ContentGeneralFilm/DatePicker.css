@@ -1,0 +1,68 @@
+/* React-widgets */
+
+.rw-cell {
+  vertical-align: middle;
+}
+
+.rw-cell.rw-state-selected, 
+.rw-cell.rw-state-selected:hover {
+  background-color: var(--ui-color-1);
+  border-color: var(--ui-color-1);
+}
+
+.rw-widget-picker>.rw-select {
+  display: none;
+}
+
+.DatePicker {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  overflow: auto;
+}
+
+.DatePicker input {
+  font-family: 'Dosis', sans-serif;
+  border-radius: 0;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  height: 42px;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s, outline 0.3s;
+}
+
+.DatePicker.error input {
+  border: 1px solid red !important; 
+}
+
+.DatePicker.error input:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0px 6px 2px #ce8483;
+}
+
+.DatePicker input:hover {
+  border-color: rgb(179, 179, 179);
+}
+
+.DatePicker input:focus {
+  border-color: #2684FF;
+  box-shadow: 0 0 0 1px #2684FF;
+}
+
+.rw-open input {
+  border-color: #2684FF;
+  box-shadow: 0 0 0 1px #2684FF;
+}
+
+.DatePicker input::-webkit-input-placeholder {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.rw-calendar-transition {
+  margin-bottom: 0;
+}

@@ -1,0 +1,55 @@
+{
+  "name": "block-buster",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "connected-react-router": "^4.5.0",
+    "focus-trap-react": "^5.0.1",
+    "history": "^4.7.2",
+    "moment": "^2.22.2",
+    "query-string": "^6.2.0",
+    "rc-slider": "^8.6.3",
+    "react": "^16.6.0",
+    "react-avatar-editor": "^11.0.4",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.0",
+    "react-dropzone": "^7.0.1",
+    "react-facebook": "^6.0.15",
+    "react-images": "^0.5.19",
+    "react-lines-ellipsis": "^0.13.2",
+    "react-modal-video": "^1.2.1",
+    "react-redux": "^5.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^1.2.0",
+    "react-scripts": "^2.1.2",
+    "react-scrolllock": "^3.0.2",
+    "react-select": "^2.1.1",
+    "react-slick": "^0.23.2",
+    "react-sticky": "^6.0.3",
+    "react-twitter-widgets": "^1.7.1",
+    "react-widgets": "^4.4.7",
+    "react-widgets-moment": "^4.0.23",
+    "redux": "^4.0.1",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0",
+    "smoothscroll-polyfill": "^0.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "homepage": "https://sergeydragunov.github.io/film-app",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

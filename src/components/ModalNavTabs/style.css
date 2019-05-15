@@ -1,0 +1,64 @@
+/* Modal Nav Tabs */
+
+.modal-nav-tabs {
+	display: flex;
+	padding: 20px 0px;
+	justify-content: space-between;
+	align-items: flex-end;
+	min-height: 78px;
+	-webkit-overflow-scrolling: touch
+}
+
+.modal-nav-tabs a {
+	position: relative;
+	margin: 0px 10px;
+  white-space: nowrap;
+}
+
+.modal-nav-tabs a:first-child {
+	margin-left: 0px;
+}
+
+.modal-nav-tabs a:last-child {
+	margin-right: 0px;
+}
+
+.modal-nav-tabs a.disabled {
+	color: grey;
+	opacity: 0.4;
+}
+
+.modal-nav-tabs a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	background: var(--ui-color-1);
+	width: 0;
+	transition: all 0.3s;
+}
+
+.modal-nav-tabs a.active {
+	font-size: 25px;
+	font-weight: bold;
+	color: #000;
+}
+
+.modal-nav-tabs a:hover::before,
+.modal-nav-tabs a:focus::before {
+	height: 1px;
+	width: 100%;
+}
+
+.modal-nav-tabs a.active::before {
+	height: 3px;
+	width: 100%;
+}
+
+@media (max-width: 991px) {
+	.modal-nav-tabs {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+/* End Modal Nav Tabs */

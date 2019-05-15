@@ -1,0 +1,204 @@
+/* Media Videos */
+
+.media-videos-container {
+  /*padding-top: 20px;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+.media-video {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.media-video__img-wrapper {
+  width: 170px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: var(--logo-bg);
+  background-size: 30%;
+}
+
+.media-video--small .media-video__img-wrapper {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0;
+}
+
+.media-video__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-video__img-fancybox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.media-video__img {
+  transition: all 0.3s;
+}
+
+.media-video__img-fancybox:before {
+  z-index: 9;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/icons/play-button.svg') no-repeat center;
+  background-size: 30%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.media-video--small .media-video__img-fancybox:before {
+  background-size: 40%;
+}
+
+.media-video__img-fancybox:hover:before,
+.media-video__img-fancybox:focus:before {
+  background-size: 32%;
+}
+
+.media-video--small .media-video__img-fancybox:hover:before,
+.media-video--small .media-video__img-fancybox:focus:before {
+  background-size: 50%;
+}
+
+.media-video__img-fancybox:hover .media-video__img,
+.media-video__img-fancybox:focus .media-video__img {
+  transform: scale(1.1);
+}
+
+.media-video__title a {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.media-video:hover .media-video__title a,
+.media-video__title a:hover,
+.media-video__title a:focus {
+  color: var(--ui-color);
+}
+
+.media-video--submit .media-video__title a {
+  color: #000;
+}
+
+.media-video--submit:hover .media-video__title a,
+.media-video--submit .media-video__title a:hover,
+.media-video--submit .media-video__title a:focus {
+  color: var(--ui-color-1);
+}
+
+.media-video__title:focus,
+.media-video__title:hover {
+  color: var(--ui-color);
+}
+
+.media-video__time {
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  color: #abb7c4;
+  font-weight: 400;
+  text-transform: none;
+}
+
+@media (max-width: 480px) {
+  .media-video--responsive {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .media-video__img-wrapper {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Photo Gallery */
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+.media-photo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-left: 10px;  
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.media-photo__img-wrapper {
+  overflow: hidden;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background: var(--logo-bg);
+}
+
+.media-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.media-photo__img-wrapper:hover .media-photo__img,
+.media-photo__img-wrapper:focus .media-photo__img {
+  transform: scale(1.1);
+}
+
+.media-photo__remove-btn, .media-video__remove-btn {
+  opacity: 0.3;
+  z-index: 9;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background: url('../../assets/images/icons/cross.svg') no-repeat center;
+  background-size: 40%;
+  background-color: var(--ui-color-1);
+  transition: all 0.3s;
+}
+
+.media-photo:hover .media-photo__remove-btn,
+.media-photo__remove-btn:focus,
+.media-video:hover .media-video__remove-btn,
+.media-video__remove-btn:focus {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .photo-gallery {
+    justify-content: space-between;
+  }
+
+  .media-photo--responsive {
+    width: 41%;
+    height: auto;
+  }
+}

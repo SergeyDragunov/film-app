@@ -1,0 +1,55 @@
+.content-images-upload {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid var(--ui-color-1);
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	padding: 20px 10px 0px;
+}
+
+.dropzone {
+	width: 100px;
+	height: 100px;
+	border: 3px dashed var(--ui-color-1);
+	border-radius: 5px;
+	margin: 0px 10px 20px;
+	text-align: center;
+	padding: 15px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.dropzone:hover .dropzone__icon,
+.dropzone input:focus + .dropzone__icon {
+	transform: scale(1.1);
+}
+
+.dropzone.active-drag {
+	border-color: var(--ui-color);
+}
+
+.dropzone__icon {
+  display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../../assets/images/icons/camera.svg') no-repeat center;
+	background-size: 100%;
+	transition: all 0.3s;
+}
+
+.dropzone__text {
+	display: inline-block;
+	width: 100%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222222;
+  line-height: 120%;
+}
+
+@media (max-width: 767px) {
+  .content-images-upload {
+    margin-bottom: 15px;
+  }
+}

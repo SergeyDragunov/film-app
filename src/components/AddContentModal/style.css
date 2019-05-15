@@ -1,0 +1,99 @@
+/* Form-select */
+
+.modal .form-select__control {
+	min-height: 42px;
+  border-color: #e1e1e1;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.modal .form-select__indicator-separator {
+	background-color: #e1e1e1; 
+}
+
+.modal .form-select__placeholder {
+	font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal .form-select__menu {
+	text-transform: none;
+}
+
+.modal .form-select__multi-value__label {
+	text-transform: none;
+}
+
+.form-select__input input {
+	height: auto !important;
+	margin-top: 0 !important;
+}
+
+.form-select__input input:focus,
+.form-select__input input:hover {
+	box-shadow: none;
+}
+
+.form-select__menu {
+	border-radius: 0 !important;
+}
+
+.form-select__option {
+	display: flex !important;
+	align-items: center;
+}
+
+.form-select__single-value {
+  font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+	color: #222222;
+	font-weight: bold;
+}
+
+.form-select__single-value i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.form-select__single-value .social-icon--imdb {
+	margin-left: 0;
+}
+
+.form-select__option i {
+	font-size: 20px;
+	width: 15px;
+	margin-right: 10px;
+}
+
+/* End Form-select */
+
+.content-modal__footer {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 20px 0px;
+}
+
+.content-modal__save-exit-btn {
+	margin: 0px 10px;
+}
+
+.content-modal__reset-btn {
+	margin-right: auto;
+}
+
+@media (max-width: 480px) {
+	.content-modal__save-exit-btn {
+		width: 100%;
+		margin: 20px 0px 5px;
+	}
+
+	.content-modal__reset-btn, 
+	.content-modal__next-step-btn,
+	.content-modal__send-btn {
+		width: 100%;
+	}
+}

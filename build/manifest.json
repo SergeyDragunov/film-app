@@ -1,0 +1,10 @@
+{
+  "short_name": "Block buster",
+  "name": "Block buster",
+  "icons": [
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

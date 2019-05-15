@@ -1,0 +1,22 @@
+.logo {
+	display: inline-block;
+	width: 80px;
+}
+
+.logo path {
+	transition: all 0.3s;
+}
+
+.logo:hover path {
+	fill: var(--ui-color);
+}
+
+.logo:focus {
+	outline: 1px solid var(--ui-color);
+} 
+
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+

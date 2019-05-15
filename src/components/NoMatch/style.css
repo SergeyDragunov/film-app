@@ -1,0 +1,60 @@
+.noMatch {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3%;
+	background: url('../../assets/images/tiny-main-bg.jpg') no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.noMatch__logo {
+	margin-bottom: 40px;
+}
+
+.noMatch__heading {
+  font-family: 'Dosis', sans-serif;
+  font-size: 23em;
+  letter-spacing: 30px;
+  color: var(--ui-color);
+  font-weight: 500;
+  text-transform: uppercase;
+	text-align: center;
+}
+
+.noMatch__sub-heading {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: none;
+	text-align: center;
+}
+
+.noMatch__btn {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+	.noMatch__heading {
+		font-size: 9em;
+	}
+
+	.noMatch__sub-heading {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.noMatch {
+		padding: 15% 5%;
+	}
+
+	.noMatch__heading {
+		font-size: 7em;
+    letter-spacing: 20px;
+	}
+}

@@ -1,0 +1,34 @@
+.tab-slider {
+	margin-bottom: 80px;
+	position: relative;
+	padding-top: 20px;
+	margin-right: -7px;
+	margin-left: -7px;
+}
+
+.tab-slider .slick-dots {
+	opacity: 0;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	height: 20px;
+	text-align: right;
+}
+
+.tab-slider--dots .slick-dots {
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.tab-slider {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	.tab-slider .slick-dots {
+		text-align: center;
+		top: -10px;
+	}
+}

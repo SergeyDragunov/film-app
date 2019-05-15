@@ -1,0 +1,160 @@
+.content-filmography__row {
+	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-bottom: 20px;
+}
+
+.content-filmography__input-wrapper {
+	padding: 0 15px;
+	width: 40%;
+}
+
+.content-filmography__roles-wrapper {
+	padding: 0 15px;
+	width: 40%;
+}
+
+.content-filmography__add-btn-wrapper {
+	width: 20%;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.content-filmography__add-btn {
+	min-height: 42px;
+	margin-top: 31px;
+}
+
+.content-filmography__films-list {
+	padding: 20px 0px;
+}
+
+/* content-film-item */
+
+.content-film-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 5px 0px;
+}
+
+.content-film-item__title {
+	width: 40%;
+	flex-shrink: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content-film-item__title a {
+	display: inline-block;
+	white-space: nowrap;
+	max-width: 95%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: underline;
+}
+
+.content-film-item__roles {
+	margin: 0px 10px;
+}
+
+.content-film-item a:hover,
+.content-film-item a:focus {
+	color: var(--link-hover-color)	
+}
+
+
+.content-filmography-item__remove-btn {
+	color: red;
+	margin-left: 15px;
+}
+
+.content-control--filmography {
+	flex-shrink: 0;
+}
+
+.content-control--filmography .content-control__btn {
+  box-shadow: none;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.content-control--filmography .content-control__btn--delete {
+	margin-right: 0;
+}
+
+@media (max-width: 767px) {
+	.content-filmography__row {
+		margin-bottom: 15px;
+		flex-wrap: wrap;
+	}
+
+	.content-filmography__col {
+		width: 100%;
+	}
+
+	.content-filmography__add-btn-wrapper {
+		text-align: right;
+	}
+
+	.content-filmography__add-btn {
+		margin-top: 0px;
+	}
+
+	.content-control--filmography {
+    margin-top: 5px;
+    text-align: right;
+	}
+
+	.content-film-item__role {
+		padding-bottom: 5px;
+	}
+
+	.content-filmography__roles-wrapper {
+		margin-top: 5px;
+	}
+
+	.content-filmography__add-btn {
+		margin-top: 5px;
+		width: 100%;
+	}
+
+	.content-film-item {
+		flex-wrap: wrap;
+	}
+
+	.content-film-item__title {
+		width: 100%;
+	}
+
+	.content-film-item__title a {
+    white-space: normal;
+    max-width: 100%;
+    overflow: visible;
+    text-overflow: unset;
+	}
+
+	.content-film-item__roles {
+		margin: 0;
+		padding: 5px 0px 0px;
+	}
+
+	.content-control--filmography {
+		width: 100%;
+		text-align: right;
+	}
+}
+
+@media (max-width: 480px) {
+	.content-filmography-link a {
+		width: 200px;
+	}
+
+	.content-filmography-link__remove-btn {
+		margin-left: auto;
+	}
+}

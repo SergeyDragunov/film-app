@@ -1,0 +1,115 @@
+/* Content Control Text */
+
+.content-control-text {
+  width: 100%;
+}
+
+.content-control-text p {
+  width: 70%;
+  margin: auto;
+  padding: 20px 0px;
+  margin-bottom: 0;
+  font-size: 30px;
+  padding: 40px 0px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 110% !important;
+}
+
+.content-control-text a {
+  color: #4280bf;
+}
+
+/* Content-control */
+
+.content-control--focused {
+  transform: translate3d(0, 0px, 0) !important;
+}
+
+.content-control__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  background-color: var(--ui-color-1);
+  margin: 5px 5px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+
+.content-control__btn-text {
+  opacity: 0;
+  width: 0;
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.content-control__btn svg {
+  width: 12px;
+  height: 12px;
+}
+
+.content-control__btn:hover svg path,
+.content-control__btn:focus svg path {
+  fill: var(--ui-color);
+}
+
+@media (min-width: 1201px) {
+  .content-control__btn:hover {
+    width: 70px;
+  }
+
+  .content-control--static .content-control__btn:hover {
+    width: 25px;
+  }
+
+  .content-control__btn--award:hover, 
+  .content-control__btn--delete:hover {
+    width: 80px;
+  }
+
+  .content-control__btn:hover .content-control__btn-text {
+    width: auto;
+    opacity: 1;
+    margin-left: 5px;
+  }
+
+  .content-control--static .content-control__btn:hover .content-control__btn-text {
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-control {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .content-control--talent {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-control-text p {
+    width: 100%;
+    padding: 10px 0px;
+  }
+}

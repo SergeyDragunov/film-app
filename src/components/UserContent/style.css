@@ -1,0 +1,86 @@
+.user-content__heading {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.user-content__add-btn-wrapper {
+  width: 170px;
+  height: 261px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-content__add-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin: 10px 30px 60px;*/
+  border-radius: 50%;
+  border: 3px solid var(--ui-color-1);
+  color: var(--ui-color-1);
+  transition: all 0.3s;
+}
+
+.user-content__add-btn:hover,
+.user-content__add-btn:focus {
+  border-color: var(--ui-color);
+  fill: var(--ui-color);
+}
+
+.user-content__add-btn svg {
+  width: 50%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.user-content__add-btn svg path {
+  transition: all 0.3s;
+}
+
+.user-content__add-btn:hover svg path,
+.user-content__add-btn:focus svg path {
+  fill: var(--ui-color);
+}
+
+/*  */
+
+.user-content__toggle-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+@media (max-width: 480px) {
+  .user-content__toggle-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.user-content__add-btn-wrapper1 {
+  text-align: right;
+}
+
+.user-content__add-btn1 {
+  border: 3px solid var(--ui-color-1);
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.user-content__add-btn1:hover,
+.user-content__add-btn1:focus {
+  color: var(--ui-color);
+}

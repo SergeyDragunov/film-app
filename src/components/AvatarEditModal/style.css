@@ -1,0 +1,61 @@
+.avatar-edit-modal__change-btn {
+	margin: 10px 0px;
+	text-align: center;
+}
+
+.avatar-edit-modal__editor {
+	text-align: center;
+}
+
+.avatar-edit-modal__slider-wrapper {
+	margin: 10px 0px;
+}
+
+.avatar-edit-modal__slider-title {
+	margin: 0;
+	margin-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.avatar-edit-modal__error {
+	text-align: center;
+	color: var(--ui-color-1);
+	margin-bottom: 0;
+}
+
+.avatar-edit-modal__buttons {
+	margin-top: 30px;
+}
+
+.modal__heading--avatar {
+	margin-bottom: 30px
+}
+
+.avatar-edit-modal__delete-btn-wrapper {
+	text-align: center;
+}
+
+.avatar-edit-modal__delete-btn {
+	width: auto;
+	height: auto;
+	padding: 0;
+	background: transparent;
+	text-transform: none;
+  transition: all 0.3s ease-out;
+	color: #666;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.avatar-edit-modal__change-btn input:focus ~ label {
+	color: var(--ui-color);
+}
+
+.avatar-edit-modal__delete-btn:hover,
+.avatar-edit-modal__delete-btn:focus {
+	color: #020d18;
+}

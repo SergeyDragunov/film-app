@@ -1,0 +1,88 @@
+.slider {
+  position: relative;
+  background-image: url('../../assets/images/tiny-main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #10223D;
+}
+
+.slider-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.start-slider {
+  z-index: 1;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.start-slider .slick-dots {
+  text-align: right;
+  opacity: 0;
+}
+
+.start-slider--dots .slick-dots {
+  opacity: 1;
+}
+
+@media (max-width: 1367px) {
+  .slider:after {
+    background-attachment: scroll;
+    background-position: center;
+  } 
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding-top: 100px;
+  }
+
+  .start-slider {
+    width: 470px;
+  } 
+
+  .start-slider .slick-dots {
+    text-align: center;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-slider {
+    width: 250px;
+  } 
+}
+
+
+/* Preloading Homepage Hero Image */
+
+@supports (filter: blur(1px)) {
+  .slider {
+    transform: translateZ(0);
+  }
+  .slider-bg::after {
+    animation: sharpen 0.7s both;
+  }
+  @keyframes sharpen {
+    from {
+      background-image: url('../../assets/images/main-bg.jpg');
+      filter: blur(20px);
+    }
+    to {
+      background-image: url('../../assets/images/main-bg.jpg');
+      filter: blur(0px);
+    }
+  }
+}

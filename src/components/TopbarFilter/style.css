@@ -1,0 +1,82 @@
+/* Pagination 2 */
+
+.pagination2 {
+  display: flex;
+  margin: auto;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.pagination2 button, 
+.pagination2 div span {
+  outline: none;
+  background: none;
+  border: none;
+  display: inline-block;
+  margin-right: 0px;
+  width: 25px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.pagination2 button:focus {
+  outline: 1px solid var(--ui-color);
+}
+
+.pagination2 > span {
+  flex-shrink: 0;
+  padding-left: 10px;
+}
+
+.pagination2 div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination2 span {
+  margin-right: 15px;
+}
+
+.pagination2 span,
+.pagination2 a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.pagination2 button,
+.pagination2 div span {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4280bf;
+}
+
+.pagination2 button.active,
+.pagination2 button:hover,
+.pagination2 button:focus {
+  color: var(--ui-color);
+}
+
+@media (max-width: 767px) {
+  .pagination2 {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .pagination2 > span {
+    margin: 5px 0px;
+    padding: 0;
+  }
+
+  .pagination2 {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}

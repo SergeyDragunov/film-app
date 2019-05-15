@@ -1,0 +1,45 @@
+/**/
+
+.DayPickerInput {
+  width: 100%;
+}
+
+.DayPicker {
+  font-size: 12px;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside), .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+  background-color: var(--ui-color-1);
+}
+
+.DayPicker:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: rgba(var(--ui-color-1), 0.5);
+}
+
+.DayPickerInput input {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  height: 42px;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.DayPickerInput input:hover {
+  border-color: rgb(179, 179, 179);
+}
+
+.DayPickerInput input:focus {
+  border-color: #2684FF;
+  box-shadow: 0 0 0 1px #2684FF;
+}
+
+.DayPickerInput input::-webkit-input-placeholder {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  text-transform: capitalize;
+}

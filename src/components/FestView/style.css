@@ -1,0 +1,112 @@
+.fest-award {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.fest-award__content {
+  display: flex;
+  align-items: center;
+}
+
+.fest-award__title {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.fest-award__img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: var(--logo-bg);
+  border-radius: 5px;
+}
+
+.fest-award__img:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.fest-award__img.award:after {
+  background: url('../../assets/images/icons/award-symbol.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.fest-award__img.nomination:after {
+  background: url('../../assets/images/icons/award-symbol-nomination.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.fest-award__img.honorable:after {
+  background: url('../../assets/images/icons/award-symbol-honorable.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.fest-award__link {
+  color: var(--link-color); 
+}
+
+.fest-award__link:hover,
+.fest-award__link:focus {
+  color: var(--ui-color);
+}
+
+/* Festival Award */
+
+.festival__award-slider .slick-dots {
+  margin-bottom: -10px;
+  text-align: right;
+}
+
+.festival__awards {
+  display: flex;
+}
+
+.festival__award {
+  flex-shrink: 0;
+  width: 25%;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.slick-slide .festival__award {
+  width: auto;
+}
+
+.festival__award-icon {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.festival__award-title {
+  font-size: 16px;
+  color: white;
+}
+
+.festival__award-icon--Winner {
+  background: url('../../assets/images/icons/award-symbol.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.festival__award-icon--Nomination {
+  background: url('../../assets/images/icons/award-symbol-nomination.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.festival__award-icon--Honorable {
+  background: url('../../assets/images/icons/award-symbol-honorable.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.festival__award-reciever {
+  color: #abb7c4;
+}
+
+/* Festival Award  End*/

@@ -1,0 +1,137 @@
+.content-social__row {
+	display: flex;
+	align-items: flex-end;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-bottom: 20px;
+}
+
+.content-social__help-text {
+	display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: grey;
+  font-family: 'Dosis', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-social__input-wrapper {
+	padding: 0 15px;
+	width: 50%;
+}
+
+.content-social__networks-wrapper {
+	padding: 0 15px;
+	width: 30%;
+}
+
+.content-social__add-btn-wrapper {
+	width: 20%;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.content-social__add-btn {
+	min-height: 42px;
+}
+
+.content-social-links {
+	padding: 10px 0px;
+}
+
+.content-social-link {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1;
+	min-height: 30px;
+}
+
+.content-social-link i {
+	font-size: 26px;
+	margin-right: 5px;
+	width: 30px;
+  text-align: center;
+}
+
+.content-social-link .social-icon {
+	width: 30px;
+	margin-right: 5px;
+}
+
+.content-social-link .social-icon {
+	width: 30px;
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.content-social-link a {
+	width: 300px;
+	padding: 0px 5px;
+	font-size: 16px;
+	text-decoration: underline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.content-social-link__remove-btn {
+	color: red;
+	margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+	.content-social__row {
+		flex-wrap: wrap;
+		padding-bottom: 10px;
+	}
+
+	.content-social__col {
+		width: 100%;
+	}
+
+	.content-social__add-btn-wrapper {
+		text-align: right;
+	}
+
+	.content-social__networks-wrapper {
+		margin-top: 5px;
+	}
+
+	.content-social__add-btn {
+		margin-top: 5px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.content-social-link a {
+		width: 200px;
+	}
+
+	.content-social-link__remove-btn {
+		margin-left: auto;
+		padding: 5px 0px 0px;
+	}
+}
+
+
+/* Form-select */
+
+.form-select--socials .form-select__control {
+	height: 42px;
+}
+
+.form-select--socials, .form-select--socials  .form-select__menu {
+	text-transform: capitalize;
+}
+
+.form-select--socials .form-select__indicator-separator {
+	display: none;
+}
+
+.form-select--socials .form-select__single-value {
+  display: flex;
+  align-items: center;	
+}

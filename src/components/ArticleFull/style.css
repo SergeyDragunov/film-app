@@ -1,0 +1,205 @@
+.article-full__heading {
+	/*min-height: 72px;*/
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px
+}
+
+.article-full p {
+	margin-bottom: 20px;
+}
+
+.artical-full__top-img {
+	height: 458px;
+	background: var(--logo-bg);
+	background-size: 15%;
+	border-radius: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.artical-full__top-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.article-full__text a {
+  color: var(--link-color);
+}
+
+.article-full__text a:hover {
+  color: var(--ui-color);
+}
+
+.article-full__text a:focus {
+  text-decoration: underline;
+}
+
+.article-full__footer {
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+  border-bottom: 1px solid #405266;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.article-full__tags {
+	display: flex;
+	align-items: center;
+}
+
+.article-full__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.article-full__tags-title, .social-link--article-full h4  {
+	font-family: Dosis, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: none;
+  margin-right: 15px;
+}
+
+.article__tag--full {
+	font-family: Nunito,sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .artical-full__top-img {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .artical-full__top-img {
+    /*min-height: 335px;*/
+  }
+}
+
+@media (max-width: 768px) {
+  .artical-full__top-img {
+    /*min-height: auto;*/
+  }
+}
+
+@media (max-width: 480px) {
+  .article-full__tags {
+    padding: 10px 0px;
+  }
+
+  .article-full__heading {
+    font-size: 30px;
+    min-height: 59px;
+  }
+}
+
+/* Text Skeleton */
+
+.article-full__text-placeholder {
+	--text-skeleton: linear-gradient(#abb7c4 40px, transparent 0);
+	--text-height: 14px;
+
+	--line-height: 25px;
+
+	--line-1-position: 0px 3px;
+	--line-2-position: 0px 28px;
+	--line-3-position: 0px 54px;
+	--line-4-position: 0px 80px;
+
+	--par-margin: 117px;
+
+	--par-image: 
+		var(--text-skeleton),
+  	var(--text-skeleton),
+  	var(--text-skeleton),
+  	var(--text-skeleton);
+  --par-size: 
+  	85%  var(--text-height),
+  	75%  var(--text-height),
+  	95% var(--text-height),
+  	80%  var(--text-height);
+	--par-1-position: 
+	 	0 3px,
+  	0 calc(3px + (1 * 25px)),
+  	0 calc(3px + (2 * 25px)),
+  	0 calc(3px + (3 * 25px));
+	--par-2-position: 
+	 	0 var(--par-margin),
+  	0 calc(var(--par-margin) + (1 * 25px)),
+  	0 calc(var(--par-margin) + (2 * 25px)),
+  	0 calc(var(--par-margin) + (3 * 25px));
+	--par-3-position: 
+	 	0 calc(2 * var(--par-margin)),
+  	0 calc((2 * var(--par-margin)) + (1 * 25px)),
+  	0 calc((2 * var(--par-margin)) + (2 * 25px)),
+  	0 calc((2 * var(--par-margin)) + (3 * 25px));
+	--par-4-position: 
+	 	0 calc(3 * var(--par-margin)),
+  	0 calc((3 * var(--par-margin)) + (1 * 25px)),
+  	0 calc((3 * var(--par-margin)) + (2 * 25px)),
+  	0 calc((3 * var(--par-margin)) + (3 * 25px));
+  --par-5-position: 
+	 	0 calc(4 * var(--par-margin)),
+  	0 calc((4 * var(--par-margin)) + (1 * 25px)),
+  	0 calc((4 * var(--par-margin)) + (2 * 25px)),
+  	0 calc((4 * var(--par-margin)) + (3 * 25px));
+  --par-6-position: 
+	 	0 calc(5 * var(--par-margin)),
+  	0 calc((5 * var(--par-margin)) + (1 * 25px)),
+  	0 calc((5 * var(--par-margin)) + (2 * 25px)),
+  	0 calc((5 * var(--par-margin)) + (3 * 25px));
+
+  --blur-size: 300px 100%;
+
+	height: 696px;
+  background-repeat: no-repeat;
+  background-image: 
+  	linear-gradient(90deg, #020d1805 0, #020d18cc 50%, #020d1805 100%),
+  	var(--par-image),
+  	var(--par-image),
+  	var(--par-image),
+  	var(--par-image),
+  	var(--par-image),
+  	var(--par-image);
+  background-size: 
+  	var(--blur-size),
+  	var(--par-size),
+  	var(--par-size),
+  	var(--par-size),
+  	var(--par-size),
+  	var(--par-size),
+  	var(--par-size);
+  background-position: 
+  	-150% 0,
+  	var(--par-1-position),
+  	var(--par-2-position),
+  	var(--par-3-position),
+  	var(--par-4-position),
+  	var(--par-5-position),
+  	var(--par-6-position);
+
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position:
+      150% 0,        
+      var(--par-1-position),
+			var(--par-2-position),
+			var(--par-3-position),
+			var(--par-4-position),
+			var(--par-5-position),
+			var(--par-6-position);
+    ;
+  }
+}

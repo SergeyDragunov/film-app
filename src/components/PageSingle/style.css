@@ -1,0 +1,21 @@
+.page-single__title {
+	min-height: 72px;
+}
+
+.page-single__title--talent {
+	min-height: 36px;
+}
+
+@media (max-width: 991px) {
+	.page-single__content {
+		max-width: 650px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.page-single__content {
+		max-width: auto;
+	}
+}
+

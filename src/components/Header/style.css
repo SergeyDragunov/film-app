@@ -1,0 +1,25 @@
+
+@media (max-width: 991px) {
+	.header {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		background: none;
+	}
+
+	.header li a, .header li button {
+		line-height: 1;
+		margin: 0;
+		-webkit-appearance: none;
+	}
+
+	.header--overlay {
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s;
+	}
+
+	.header__container {
+	  background-color: #0f2133;
+	}
+}

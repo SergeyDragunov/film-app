@@ -1,0 +1,126 @@
+.content-credits__row {
+	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-bottom: 20px;
+}
+
+.content-credits__input-wrapper {
+	padding: 0 15px;
+	width: 50%;
+}
+
+.content-credits__roles-wrapper {
+	padding: 0 15px;
+	width: 30%;
+}
+
+.content-credits__add-btn-wrapper {
+	width: 20%;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.content-credits__add-btn {
+	min-height: 42px;
+	margin-top: 31px;
+}
+
+.content-credits__credits-list {
+	padding: 20px 0px;
+}
+
+/* content-credit-item */
+
+.content-credit-item {
+	padding: 5px 0px;
+}
+
+.content-credit-item__role {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content-credit-item a {
+	color: var(--link-color);
+}
+
+.content-credit-item a:hover,
+.content-credit-item a:focus {
+	color: var(--link-hover-color)	
+}
+
+.content-credits-item__remove-btn {
+	color: red;
+	margin-left: 15px;
+}
+
+.content-control--credits .content-control__btn {
+  box-shadow: none;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.content-control--credits .content-control__btn--delete {
+	margin-right: 0;
+}
+
+.content-control--credits .content-control__btn:hover {
+	width: 25px;
+}
+
+.content-control--credits .content-control__btn:hover .content-control__btn-text {
+  width: 0;
+  opacity: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+	.content-credits__row {
+		margin-bottom: 15px;
+		flex-wrap: wrap;
+	}
+
+	.content-credits__col {
+		width: 100%;
+	}
+
+	.content-credits__add-btn-wrapper {
+		text-align: right;
+	}
+
+	.content-credits__add-btn {
+		margin-top: 0px;
+	}
+
+	.content-control--credits {
+    margin-top: 5px;
+    text-align: right;
+	}
+
+	.content-credit-item__role {
+		padding-bottom: 5px;
+	}
+
+	.content-credits__roles-wrapper {
+		margin-top: 5px;
+	}
+
+	.content-credits__add-btn {
+		margin-top: 5px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.content-credits-link a {
+		width: 200px;
+	}
+
+	.content-credits-link__remove-btn {
+		margin-left: auto;
+	}
+}

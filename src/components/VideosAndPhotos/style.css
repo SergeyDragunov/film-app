@@ -1,0 +1,12 @@
+.VideosAndPhotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px -10px;
+}
+
+@media (max-width: 480px) {
+	.VideosAndPhotos {
+		justify-content: space-around;
+	}
+}

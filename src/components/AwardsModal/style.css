@@ -1,0 +1,104 @@
+.content-control--awards {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.content-control--awards .content-control__btn {
+  box-shadow: none;
+}
+
+/* Content Fest */
+
+.year-awards {
+  opacity: 0;
+  position: relative;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--ui-color-1);
+  margin-bottom: 15px;
+  transition: all 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  animation: YearAwardsFadeIn 0.3s forwards;
+}
+
+@keyframes YearAwardsFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.year-awards:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.year-awards__year {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.year-awards__awards {
+  margin-top: 20px;
+}
+
+.year-awards__award {
+  text-align: center;
+  margin-bottom: 10px;
+  animation: YearAwardsFadeIn 0.3s forwards;
+}
+
+.year-awards__award-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.year-awards__award-icon.Winner {
+  background: url('../../assets/images/icons/award-symbol.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.year-awards__award-icon.Nominee {
+  background: url('../../assets/images/icons/award-symbol-nomination.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.year-awards__award-icon.Honorable {
+  background: url('../../assets/images/icons/award-symbol-honorable.svg') no-repeat center;
+  background-size: 100%;
+}
+
+.year-awards__award-fest {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  line-height: 1.3;
+}
+
+.year-awards__award-fest a {
+  color: var(--link-color);
+}
+
+.year-awards__award-fest a:hover,
+.year-awards__award-fest a:focus {
+  color: var(--link-hover-color);
+}
+
+.year-awards__award-fest .LinesEllipsis {
+  display: inline-block;
+}
+
+.year-awards__award-name {
+  display: inline-block;
+  margin-bottom: 0;
+  font-family: 'Dosis', sans-serif;
+  color: #222222;
+}

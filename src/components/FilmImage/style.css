@@ -1,0 +1,17 @@
+.film-poster {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.film-poster__controls {
+	margin-top: auto;
+}
+
+.film-poster__btn-wrapper a {
+	line-height: 1;
+}
+
+.film-poster__btn-wrapper a i {
+	margin-right: 10px;
+}

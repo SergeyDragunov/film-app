@@ -1,0 +1,49 @@
+.overview-side-info-item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.overview-side-info-item p {
+	margin-bottom: 0;
+}
+
+.overview-side-info-item .capitalize {
+  text-transform: capitalize;
+}
+
+.overview-side-info-item__title {
+	font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+	.overview-side-info-item {
+	  margin-bottom: 30px;
+	  margin-left: 0px;
+	}
+}
+
+/* Tag */
+
+.tag {
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.tag a {
+	display: inline-block;
+  background-color: #233a50;
+  color: #abb7c4;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  line-height: 1;	
+  color: #abb7c4;
+  font-weight: 300;
+  text-transform: none;
+}
