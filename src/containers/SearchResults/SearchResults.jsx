@@ -64,8 +64,8 @@ class SearchResults extends Component {
 	}
 
 	componentDidMount() {
-		const { location, match, getAll } = this.props;
-		const content = match.params.content;
+		const { location, /*match,*/ /*getAll*/ } = this.props;
+		// const content = match.params.content;
 
 		if (location.search)
 			this.setState({filters: qs.parse(location.search)});

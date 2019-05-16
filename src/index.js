@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
@@ -42,7 +42,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
   	<ConnectedRouter history={history}>
-		  <Router history={history}>
+		  <Router history={history} basename={process.env.PUBLIC_URL}>
 		    <Route component={App} /> 
 		  </Router>
 	  </ConnectedRouter>
