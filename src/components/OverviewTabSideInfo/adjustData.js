@@ -1,27 +1,16 @@
-import moment from 'moment';
-
-import { countriesDB } from '../../utils/countriesDB';
-import { setRunningTime } from '../../utils';
-import { SEARCH_RESULTS,  } from '../../constants';
-
-const setCountry = (countryCode) => {
-	let countyName;
-	for(let i = 0; i < countriesDB.length; i++) {
-		if(countryCode === countriesDB[i].alpha3Code) countyName = countriesDB[i].name; 
-	}
-
-	return countyName;
-}
+import { SEARCH_RESULTS } from '../../constants';
 
 export const adjustData = (data) => {
-		const { 
+		const {
+			budget,
 			releaseDateUS, 
 			runningTime, 
 			keywords, 
 			category,
 			genres,
 			country,
-			credits
+			credits,
+			revenue
 		} = data;
 
 		let sideInfo = []
@@ -40,7 +29,17 @@ export const adjustData = (data) => {
 
 		if  (country) sideInfo.push({
 			title: 'Country',
-			info: setCountry(country) ? setCountry(country) : country
+			info: country.name
+		});
+
+		if (budget) sideInfo.push({
+			title: 'Budget',
+			info: budget
+		});
+
+		if (revenue) sideInfo.push({
+			title: 'Revenue',
+			info: revenue
 		});
 
 		if (category && category.length) sideInfo.push({
@@ -67,12 +66,12 @@ export const adjustData = (data) => {
 
 		if (releaseDateUS) sideInfo.push({
 			title: 'Release Date',
-			info: moment(releaseDateUS).format('LL')
+			info: releaseDateUS
 		});
 
 		if (runningTime) sideInfo.push({
 			title: 'Run Time',
-			info: setRunningTime(runningTime)
+			info: runningTime
 		});
 
 		if (keywords && keywords.length) sideInfo.push({

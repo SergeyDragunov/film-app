@@ -46,9 +46,9 @@ class TopSearch extends Component {
           value={this.state.selectValue} 
           onChange={e => this.setState({selectValue: e.target.value})}>
           <option value={SEARCH_RESULTS.FILMS}>Films</option>
-          <option value={SEARCH_RESULTS.TALENT}>Talent</option>
-          <option value={SEARCH_RESULTS.FESTS}>Festivals</option>
           <option value='spotlight'>Spotlight</option>
+          <option value={SEARCH_RESULTS.TALENT} disabled>Talent</option>
+          <option value={SEARCH_RESULTS.FESTS} disabled>Festivals</option>
           <option value={SEARCH_RESULTS.FESTS} disabled>News</option>
         </select>
         <label htmlFor="topSearch" className="sr-only">(search field)</label>

@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import DetailsMainImage from '../DetailsMainImage/DetailsMainImage';
+import adjustData from '../../containers/FilmSingle/adjustData';
 
 import './style.css';
 
 class FilmImage extends Component {
 	render() {
-		const { title, media } = this.props.data;
+		const { title, image } = this.props.data;
 		const { distanceFromBottom, isSticky, favorite } = this.props;
 		let style = {};
 		if (!!distanceFromBottom && isSticky) {
@@ -16,8 +17,7 @@ class FilmImage extends Component {
 				top: distanceFromBottom  < 0 ? this.props.style.top + 80 : 80
 			}
 		}
-		const poster = media && media.moviePoster ? media.moviePoster.full : '';
-		// const trailer = media && media.trailer;
+		const poster = image;
 
 		return (
 			<div className={`film-poster movie-img ${!distanceFromBottom ? 'sticky-sb' : ''}`} style={style}>
@@ -46,7 +46,7 @@ class FilmImage extends Component {
 };
 
 const mapStateToProps = ({ details }) => ({
-	data: details.data
+	data: Object.keys(details.data).length ? adjustData(details.data) : {},
 })
 
 export default connect(mapStateToProps, null)(FilmImage);

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
@@ -26,7 +26,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 
 smoothscroll.polyfill();
 
-const history = createBrowserHistory();
+const history = createBrowserHistory({ basename: process.env.PUBLIC_URL });
 
 const store = createStore(
   connectRouter(history)(rootReducer),
@@ -42,7 +42,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
   	<ConnectedRouter history={history}>
-		  <Router history={history} basename={process.env.PUBLIC_URL}>
+		  <Router history={history}>
 		    <Route component={App} /> 
 		  </Router>
 	  </ConnectedRouter>

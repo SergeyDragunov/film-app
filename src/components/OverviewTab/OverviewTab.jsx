@@ -11,6 +11,7 @@ import OverviewTabSideInfo from '../OverviewTabSideInfo/OverviewTabSideInfo';
 import { Ads } from '../Ads/Ads';
 
 import adjustLatestAwards from '../LatestAwardsTab/adjustData';
+import adjustData from '../../containers/FilmSingle/adjustData';
 
 const OverviewMedia = ({ match, media: {videos, images} }) => (
 	<div>
@@ -34,7 +35,7 @@ const OverviewMedia = ({ match, media: {videos, images} }) => (
 const OverviewTab = ({ data, description, biography, filmography, settings, match, location }) => {
 	const { awards } = adjustLatestAwards(data);
 	const cast = data.credits ? data.credits.cast : [];
-	// const { synopsis } = data;
+	const { synopsis } = data;
 	const media = false || {videos: [], images: []}
 	const isMedia = (!!media && !!media.images.length && !!media.videos.length) || true;
 
@@ -74,7 +75,7 @@ const OverviewTab = ({ data, description, biography, filmography, settings, matc
 
 	const renderFilmOverview = () => (
 		<div>
-			<p>{description}</p>
+			<p>{synopsis}</p>
 			{
 				isMedia &&
   			<OverviewMedia match={match} media={media} />
@@ -152,7 +153,7 @@ const OverviewTab = ({ data, description, biography, filmography, settings, matc
 		
 
 const mapStateToProps = ({ details }) => ({
-	data: details.data,
+	data: Object.keys(details.data).length ? adjustData(details.data) : {},
 	settings: details.settings
 })
 

@@ -7,7 +7,7 @@
 }
 
 .tab-slider .slick-dots {
-	opacity: 0;
+	/*opacity: 0;*/
 	position: absolute;
 	top: -20px;
 	right: 0;

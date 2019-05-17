@@ -7,7 +7,6 @@ import { TopbarSortFilter, TopbarPageFilter } from '../../components/TopbarFilte
 import PageSingle from '../../components/PageSingle/PageSingle';
 import { CommonHero } from '../../components/HeroScreens/HeroScreens';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import FacebookPlugin from '../../components/FacebookPlugin/FacebookPlugin';
 import TwitterPlugin from '../../components/TwitterPlugin/TwitterPlugin';
 import SearchForm from '../../components/SearchForm/SearchForm';
 import { FilmList } from '../../components/FilmView/FilmView';
@@ -181,7 +180,6 @@ class SearchResults extends Component {
 						{
 							!isTablet && 
 							<div>
-								<FacebookPlugin />
 								<TwitterPlugin />
 							</div>	
 						}
@@ -238,7 +236,6 @@ class SearchResults extends Component {
 					{
 						isTablet && 
 						<div>
-							<FacebookPlugin className="sb-facebook--marginBottom" />
 							<TwitterPlugin />
 						</div>	
 					}

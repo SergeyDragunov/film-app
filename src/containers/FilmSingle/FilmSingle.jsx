@@ -12,6 +12,7 @@ import SocialButtons from '../../components/SocialButtons/SocialButtons';
 
 import contentActions from '../../actions/content';
 
+import adjustData from './adjustData';
 import * as mockData from './data';
 
 class FilmSingle extends Component {
@@ -27,8 +28,10 @@ class FilmSingle extends Component {
 	}
 
 	componentDidMount() {
-		// const id = this.props.match.params.id;
-		// const { getByID } = this.props;
+		const id = this.props.match.params.id;
+		const { getByID } = this.props;
+
+		getByID('movie', id);
 
 		window.addEventListener('resize', this.setSticky);
 	}
@@ -84,13 +87,11 @@ class FilmSingle extends Component {
 		const { location, match, user } = this.props;
 		const id = match.params.id;
 		const trailerId = 'o-0hcF97wy0';
-		// const { title, year, online } = this.props.data;
-		const { title, year, online } = mockData;
-		// const data = {...mockData, ...this.props.data};
+		const { title, year, online } = this.props.data;
 		const tabs = this.setTabs();
 
 		let favorite = false;
-		
+
 		if (user.settings.loggedIn && user.data) {
 			favorite = user.data.data.favorites.films.includes(id);
 		}
@@ -150,7 +151,7 @@ const mapDispatchToProps = {
 
 const mapStateToProps = ({ details, user }) => ({
 	settings: details.settings,
-	data: details.data,
+	data: Object.keys(details.data).length ? adjustData(details.data) : {},
 	user
 });
 

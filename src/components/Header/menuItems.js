@@ -20,16 +20,16 @@ export default [
       //   ]
       // },
       [`/${SEARCH_RESULTS.PAGE}/${SEARCH_RESULTS.FILMS}`, "all films"],
-      [`/${SINGLE_PAGE.FILM}/m0600128`, "Film single"],
+      [`/${SINGLE_PAGE.FILM}/299534`, "Film single"],
     ]
   },
-  {
-    name: 'talent',
-    items: [
-      [`/${SEARCH_RESULTS.PAGE}/${SEARCH_RESULTS.TALENT}`, "all talent"],
-      [`/${SINGLE_PAGE.TALENT}/t0600004`, "talent single"]
-    ]
-  },
+  // {
+  //   name: 'talent',
+  //   items: [
+  //     [`/${SEARCH_RESULTS.PAGE}/${SEARCH_RESULTS.TALENT}`, "all talent"],
+  //     [`/${SINGLE_PAGE.TALENT}/t0600004`, "talent single"]
+  //   ]
+  // },
   // {
   //   name: 'festival',
   //   items: [

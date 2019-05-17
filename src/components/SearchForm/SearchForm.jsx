@@ -314,7 +314,7 @@ class SearchForm extends Component {
 		return (
 			<div className="searh-form">
 				<h4 className="sb-title">Search for
-					<span style={this.state.isFaded ? {} : {opacity: 0}}> {this.state.content}</span>
+					<span style={this.state.isFaded ? {} : {opacity: 0}}> Film</span>
 				</h4>
 				<form className="form-style-1">
 					<div className="row">
@@ -328,8 +328,8 @@ class SearchForm extends Component {
 									className="ui fluid dropdown"
 									onChange={this.handleInputChange}>
 									<option value={SEARCH_RESULTS.FILMS}>Films</option>
-									<option value={SEARCH_RESULTS.TALENT}>Talent</option>
-									<option value={SEARCH_RESULTS.FESTS}>Festivals</option>
+									<option value={SEARCH_RESULTS.TALENT} disabled>Talent</option>
+									<option value={SEARCH_RESULTS.FESTS} disabled>Festivals</option>
 								</select>
 							</div>	
 						</div>

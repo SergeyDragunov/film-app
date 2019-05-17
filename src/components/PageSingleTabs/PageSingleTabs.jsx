@@ -45,6 +45,7 @@ class PageSingleTabs extends Component {
 							render={props => 
 								<OverviewTab
 									{...props}
+									data={data}
 									description={description}
 									biography={biography} 
 									filmography={filmography} />} />

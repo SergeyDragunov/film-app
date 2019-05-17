@@ -2,6 +2,10 @@ import { API_URL } from '../constants.js';
 import authHeader from '../utils/auth-header.js';
 import { logout } from './userService';
 
+const API = "https://api.themoviedb.org/3";
+const API_KEY = "5874acfd11651a28c55771624f7021f4";
+const apiRequest = (content, id) => `${API}/${content}/${id}?api_key=${API_KEY}&language=en-US`
+
 const getAll = content => {
   const requestOptions = {
     method: 'GET'
@@ -17,7 +21,8 @@ const getByID = (content, id) => {
     method: 'GET'
   };
 
-  return fetch(`${API_URL}/${content}/${id}`, requestOptions)
+  // return fetch(`${API_URL}/${content}/${id}`, requestOptions)
+  return fetch(apiRequest(content, id), requestOptions)
     .then(handleResponse)
     .then(data => data);
 }
