@@ -18,13 +18,13 @@ import { sortData, scrollToStart, plural } from '../../utils';
 import { SEARCH_RESULTS } from '../../constants';
 import adjustData from './adjustData';
 import filterData from './filterData';
-import mockFilms from './films';
-import mockTalent from './talent';
+import mockFilms from './mockFilms';
+import adjustMockData from './adjustMockData'
 import contentActions from '../../actions/content';
 
+console.log(adjustMockData(mockFilms))
 const mockData = {
-	[SEARCH_RESULTS.FILMS]: mockFilms,
-	[SEARCH_RESULTS.TALENTS]: mockTalent
+	[SEARCH_RESULTS.FILMS]: adjustMockData(mockFilms),
 }
 
 const sorting = [

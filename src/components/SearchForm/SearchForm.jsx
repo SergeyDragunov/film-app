@@ -212,7 +212,7 @@ class SearchForm extends Component {
 		return (
 			<div>
 				<FilterTitle heading='Film' title={this.state.title} handleInputChange={this.handleInputChange} />
-				<SelectFilter 
+				{/*<SelectFilter 
 					type='category' 
 					heading='Category'
 					placeholder='Choose category ...' 
@@ -238,7 +238,7 @@ class SearchForm extends Component {
 				<MovieFilterRelease 
 					releaseFrom={this.state.release[0]} 
 					releaseTo={this.state.release[1]}  
-					handleInputChange={this.handleInputChange} />
+					handleInputChange={this.handleInputChange} />*/}
 			</div>
 		)
 	}

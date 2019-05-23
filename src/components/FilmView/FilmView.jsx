@@ -74,7 +74,7 @@ export class Film extends Component {
 						))
 					}
 					{
-						film.country.name &&
+						(film.country && film.country.name) &&
 						<div className="film__param">
 							<span className="film__param-title">Country: </span> <span className="film__param-data">{film.country.name}</span>
 						</div> 
